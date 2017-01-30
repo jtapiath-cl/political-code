@@ -113,8 +113,12 @@ colnames(tdm.final.dos) <- c("Autonomistas", "Poder Ciudadano", "Humanista", "Ig
 # wordcloud(tdm.final, random.order=FALSE, title.size=0.8, max.words=200)
 
 ### 6.1: Nube de comparacion
+png("comparison-plot-%d.png")
 comparison.cloud(tdm.final, random.order=FALSE, title.size=0.8, max.words=500)
 comparison.cloud(tdm.final.dos, random.order=FALSE, title.size=0.8, max.words=500)
+dev.off()
 
 ### 6.2: Nube común
+png("commonality-plot.png")
 commonality.cloud(tdm.final, random.order=FALSE, max.words=500)
+dev.off()
