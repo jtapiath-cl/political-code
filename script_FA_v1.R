@@ -110,7 +110,21 @@ colnames(tdm.final) <- c("Autonomistas", "Poder Ciudadano", "Humanista", "Iguald
 colnames(tdm.final.dos) <- c("Autonomistas", "Poder Ciudadano", "Humanista", "Igualdad", "Izq Autonoma", "Izq Libertaria", "Liberales", "RD")
 
 ## 6.0: Nubes de palabras
-# wordcloud(tdm.final, random.order=FALSE, title.size=0.8, max.words=200)
+plotear <- function(matriz)
+{
+  partidos <- colnames(matriz)
+  wcs <- paste(paste("wordcloud",partidos,sep="-"),".png",sep="")
+  ncol.mat <- ncol(matriz)
+  for(i in 1:ncol.mat)
+  {
+    png(wcs[[i]])
+    wordcloud(words=rownames(tdm.final), freq=tdm.final[,i], random.order=TRUE, min.freq=3, max.words=200)
+    dev.off()
+  }
+}
+
+plotear(tdm.final)
+
 
 ### 6.1: Nube de comparacion
 png("comparison-plot-%d.png")
