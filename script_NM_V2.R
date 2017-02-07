@@ -3,15 +3,15 @@
 
 ## Listado de partidos de la Nueva Mayoria
 ### Partido Democrata Cristiano
-### Estatutos: 
+### El PDC no tiene ningun documento similar a una declaracion de principios
 ### Partido Radical Social Democrata
-### Estatutos: http://www.partidoradical.cl/declaracion-de-principios/
+### Declaracion de principios: http://www.partidoradical.cl/declaracion-de-principios/
 ### Partido Por la Democracia
-### Estatutos: http://www.ppd.cl/wp-content/uploads/2012/05/DDDD-PPD2.pdf
+### Declaracion de principios: http://www.ppd.cl/wp-content/uploads/2012/05/DDDD-PPD2.pdf
 ### Partido Comunista
-### Estatutos: http://www.pcchile.cl/about-3/
+### Los Comunistas y Chile: http://www.pcchile.cl/about-3/
 ### Partido Socialista
-### Estatutos: http://web.pschile.cl/pschile/?upf=dl&id=3284
+### Declaracion de principios: http://web.pschile.cl/pschile/?upf=dl&id=3284
 
 ## 1.0: Librerias y limpieza de entorno
 library(pdftools)
